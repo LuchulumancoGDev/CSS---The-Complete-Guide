@@ -1,22 +1,23 @@
 main{
-    padding-top: 32px;
+    padding-top: 2rem;
 }
 
 .background{
     background: url("../images/plans-background.jpg") center/cover;
     filter: grayscale(40%);
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: fixed;
     z-index: -1;
 }
 .plans{
     background: rgba(213, 255, 220, 0.95);
-    margin: 16px 0;
+    margin: 2rem 0;
     width: 80%;
     border: 3px solid #0e4f1f;
     border-left: none;
     position: relative;
+
     
 }
 
@@ -29,7 +30,7 @@ main{
     text-decoration: none;
     color: inherit;
     display: block;
-    padding: 32px;
+    padding: 2rem;
 }
 
 .plan__title{
@@ -45,23 +46,23 @@ main{
     position: absolute;
     top:0;
     right:0;
-    margin: 20px;
-    font-size: 12px;
+    margin: 1.25rem;
+    font-size: 0.75rem;
     color:white;
     background: #ff5454;
-    padding: 8px;
+    padding: 0.5rem;
 }
 .plan__slogan{
  
     color: #6b6a6a;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .plan__description{
     border: 1px solid black;
     background: white;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #0e4f1f;
-    padding: 16px;
+    padding: 1rem;
   
 }
 
