@@ -80,7 +80,7 @@
 }
 
 /* if this media query is equal or larger than the below */
-@media (min-width: 40rem) {
+@media (min-width: 40rem) and (min-height: 60rem){
     #product-overview{
         height: 40vh;
         background-position: 50% 25%;
@@ -143,7 +143,7 @@
     padding: 2px;
 }
 
-@media (min-width: 40rem){
+@media (min-width: 40rem),(orientation: landscape){
     .plan__list{
     width: 100%;
     text-align: center;
@@ -158,8 +158,10 @@
     .plan--highlighted {
         box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.5);
     }
-
+    
+   
 }
+
 
 #key-features{
     background: #ff1b68;
@@ -180,11 +182,7 @@
     text-align: center;
 
 }
-.key-feature{
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-}
+
 .key-feature__image{
     background: #ffcede;
     width: 128px;
@@ -202,7 +200,15 @@
     font-size: 20px;
 }
 
-
+@media(min-width: 40rem){
+    .key-feature{
+        display: inline-block;
+        width: 30%;
+        vertical-align: top;
+        min-width: 13rem;
+        max-width: 25rem;
+    }
+}
 
 .plan__features li{
     margin: 8px 0;
