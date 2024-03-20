@@ -3,7 +3,7 @@ main{
 }
 
 .background{
-    background: url("../images/plans-background.jpg") center/cover;
+    background: url("/media/jdhhsmaz/plans-background.jpg") center/cover;
     filter: grayscale(40%);
     width: 100vw;
     height: 100vh;
@@ -14,8 +14,8 @@ main{
     background: rgba(213, 255, 220, 0.95);
     margin: 2rem 0;
     width: 80%;
-    border: 3px solid #0e4f1f;
-    border-left: none;
+    border: 4px solid #0e4f1f;
+   border-left: none;
     position: relative;
 
     
@@ -69,6 +69,7 @@ main{
 .plans--lighter{
     background: rgb(234, 252, 237, 0.95);
     float: right;
+    border-right: none;
     border-left: 3px solid #0e4f1f;
     text-align: right;
 }
@@ -80,3 +81,24 @@ main{
 .plan__title--lighter{
     color: white;
 }
+
+@media (min-width: 40rem) {
+    main{
+      
+        max-width: 1500px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .plans{
+         border-left: 4px solid #0e4f1f;
+    }
+    .plans--lighter{
+        border-right: 4px solid #0e4f1f;
+    }
+    .plans--lighter:hover,
+    .plans--lighter:active{
+        border-right-color: #ff5454;
+    }
+    
+}     
